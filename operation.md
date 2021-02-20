@@ -41,7 +41,7 @@ hello world 平均约25ms 最快15ms 最大150ms
 走 mysql 查询平均约200ms 最小100ms 最大500ms
 ```
 
-### 压测服务器
+## 压测服务器
 IP：XXX.XX.XXX.183 （主机master机）  
 IP：XXX.XX.XXX.175 （执行机salve机）
 
@@ -55,7 +55,7 @@ IP：XXX.XX.XXX.175 （执行机salve机）
 |  ----  | ----  |----  |
 |  内网IP  | 默认端口4444  | CPU、Memory、Disks I/O、Network I/O|
 
-### master机执行命令
+## master机执行命令
 > 原因：
 使用GUI方式启动jmeter，运行线程较多的测试时，会造成内存和CPU的大量消耗，导致客户机卡死  
 > 所以正确的打开方式是在GUI模式下调整测试脚本，再用命令行模式执行    
@@ -71,7 +71,7 @@ jmeter -n -t D:\apache-jmeter-3.1\2hao\jiaoben.jmx -R 10.XX.XXX.68:1000 -l abtes
 -o 用于指定报表生成的文件夹路径
 -R 分布式中，执行机+端口，多个时用分号隔开
 
-### 数据整理
+## 数据整理
 - 将D:\apache-jmeter-3.1\2hao目录下的文件：q-cpu10.jmx、q-error.jmx剪切进命名后的文件夹中
 - 将D:\apache-jmeter-3.1\bin     目前下的文件：abtest.csv剪切进命名后的文件夹中  
 确保重新压测生成的文件是唯一的 

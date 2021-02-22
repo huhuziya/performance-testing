@@ -61,7 +61,7 @@ IP：XXX.XX.XXX.175 （执行机salve机）
 > 所以正确的打开方式是在GUI模式下调整测试脚本，再用命令行模式执行    
 > 备注：需要等命令执行完了才打开jmeter脚本，否则会导致执行脚本时报错
 ```buildoutcfg
-jmeter -n -t D:\apache-jmeter-3.1\2hao\jiaoben.jmx -R 10.XX.XXX.68:1000 -l abtest.csv -e -o ./output
+jmeter -n -t D:\apache-jmeter-3.1\2hao\jiaoben.jmx -R IP:端口（其中IP为apache-jmeter-3.1\bin目录下，jmeter.properties文件中# Remote Hosts指定IP） -l abtest.csv -e -o ./output
 ```
 [参考链接](https://www.cnblogs.com/kongzhongqijing/p/7216693.html)  
 -n 非 GUI 模式 -> 在非 GUI 模式下运行 JMeter  

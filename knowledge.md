@@ -26,6 +26,8 @@
 - 持久测试（Endurance testing）：也称为稳定性测试，指在相当长的时间内使用预期的负载量对系统进行测试，以检查系统的各种行为，如内存泄露、系统错误、随机行为等，  
 举例：CPU资源在70%~90%的使用率的情况下，运行一段时间。
 
+<br/>
+
 ### 二、Jmeter分布式压测原理
 [参考链接](https://blog.csdn.net/weixin_44275820/article/details/108233954)
 - 控制机的节点叫master，其他产生压力的机器叫slaves ，即负载机  
@@ -35,6 +37,8 @@
 
 > 注意：必须保证master和slaves安装相同的jdk和jmeter  
 > 前提：master的jmeter可以正常打开使用，master和slaves处于同一个局域网下，相互之间可以ping通
+
+<br/>
 
 ### API网关
 [参考链接](https://vincentruan.github.io/2020/02/27/%E5%BE%AE%E6%9C%8D%E5%8A%A1-API%E7%BD%91%E5%85%B3/)
@@ -51,6 +55,8 @@
 - 如果没有发现缓存信息，回源到应用服务器获取信息。
 - 另外，有一个缓存更新服务，定期把应用服务器中的信息更新到网关本地缓存中。
 ![示例](https://vincentruan.github.io/2020/02/27/%E5%BE%AE%E6%9C%8D%E5%8A%A1-API%E7%BD%91%E5%85%B3/640-1582786344099.webp)
+
+<br/>
 
 ### 三、压测经验总结
 #### 1、为什么jmeter要做分布式，为什么会遇到内存溢出的错误？
@@ -119,6 +125,8 @@ JVM参数调优
 #### 4、持续化性能测试
 需求迭代
 数据量变化，服务器资源配置扩展等
+
+<br/>
 
 ### 五、工具使用
 [Jmeter](https://www.cnblogs.com/yueminghai/p/6412254.html)  
